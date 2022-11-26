@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.change .bar1 {
+    @apply translate-x-0 translate-y-[8px] -rotate-45
+}
+.change .bar2 {
+  @apply opacity-0
+}
+.change .bar3 {
+    @apply translate-x-0 -translate-y-[8px] rotate-45
+}

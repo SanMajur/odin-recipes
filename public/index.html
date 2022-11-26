@@ -13,32 +13,48 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="font-Poppins">
-    <header class="sticky top-0 shadow-md mt-3 py-2 md:py-4 md:px-2">
-      <div class="container flex items-center justify-between lg:container lg:mx-auto">
-        <div class="lg:hidden"><i class="fa-solid fa-bars text-2xl font-light"></i></div>
+  <body class="font-Poppins bg-gray-200">
+    <header class="sticky top-0 shadow-md  py-2 md:py-4 md:px-2 bg-white">
+      <div class="container flex items-center justify-between lg:container lg:mx-auto md:mt-6">
+        <div id="toggleBtn" class="lg:hidden inline-block cursor-pointer" onclick="myFunction(this); toggler()">
+          <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar1 "></div>
+          <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar2 "></div>
+          <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar3 "></div>
+        </div>
         <a class="text-2xl lg:text-3xl font-bold text-orange-800 flex-1 md:flex-none items-center pl-1.5">
            Odin Recipes
         </a>
         <div class="text-sm flex gap-9 lg:w-2/5 justify-end ">
           <a class="font-light md:font-normal" href="#"><span><i class="fa-solid fa-user bg-red-500 border p-1 md:p-1.5 text-white rounded-full"></i> Log In</span></a>
           <div class="hidden lg:flex items-center justify-between flex-1">
-            <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-800" href="#">Magazine</a>
-            <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-800" href="#">Newsletter</a>
-            <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-800" href="#">Sweepstakes</a>
+            <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Magazine</a>
+            <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Newsletter</a>
+            <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Sweepstakes</a>
           </div>
         </div>
       </div>
-      <div class="container lg:flex hidden gap-5 text-sm text-gray-900 px-8 mt-7 uppercase font-semibold">
-        <a class="hover:underline decoration-red-800" href="">Dinners</a>
-        <a class="hover:underline decoration-red-800" href="">Meals</a>
-        <a class="hover:underline decoration-red-800" href="">Ingredients</a>
-        <a class="hover:underline decoration-red-800" href="">Occasions</a>
-        <a class="hover:underline decoration-red-800" href="">Cuisines</a>
-        <a class="hover:underline decoration-red-800" href="">Features</a>
-        <a class="hover:underline decoration-red-800" href="">About Us</a>
-        <a class="hover:underline decoration-red-800 ml-auto text-red-500" href="">Get the Magazine</a>
+      <div id="linkItems" class="container flex flex-col lg:flex-row  gap-5 text-sm text-gray-900 px-8 mt-8 uppercase font-semibold">
+        <a class="border-b border-gray-600 lg:border-none" href="">Dinners</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">Meals</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">Ingredients</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">Occasions</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">Cuisines</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">Features</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">About Us</a>
+        <a class="text-xs de ml-auto text-red-500" href="">Get the Magazine</a>
       </div>
     </header>
+    <main>
+      <section class="">
+        <div class="container flex flex-col lg:flex-row">
+          <div class="">
+            <img src="" alt="">
+          </div>
+          <div class=""></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../src/js/main.js"></script>
   </body>
 </html>

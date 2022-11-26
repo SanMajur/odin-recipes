@@ -7,6 +7,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       Poppins: ["Poppins, sans-serif"],
+      Roboto: ["Roboto, sans-serif"]
     },
     container: {
       center: true,

@@ -18,14 +18,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   </head>
   <body class="font-Poppins bg-gray-200">
-    <header class="sticky top-0 shadow-md  py-2 md:py-4 md:px-2 bg-white">
+    <header class="sticky top-0 shadow-md  py-2 md:py-4 md:px-2 bg-white z-50">
       <div class="container flex items-center justify-between lg:container lg:mx-auto md:mt-6">
         <div id="toggleBtn" class="lg:hidden inline-block cursor-pointer" onclick="myFunction(this); toggler()">
           <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar1 "></div>
           <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar2 "></div>
           <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar3 "></div>
         </div>
-        <a class="text-2xl lg:text-3xl font-bold text-orange-800 flex-1 md:flex-none items-center pl-1.5">
+        <a href="./index.html" class="text-2xl lg:text-3xl font-bold text-orange-800 flex-1 md:flex-none items-center pl-5">
            Odin Recipes
         </a>
         <div class="text-sm flex gap-9 lg:w-2/5 justify-end ">
@@ -49,18 +49,23 @@
       </div>
     </header>
     <main>
-      <section class="md:mt-7 mb-3 ">
-        <div class="lg:container flex flex-col lg:flex-row bg-white">
-          <div class="lg:container my-8 bg-white">
-            <img class="w-full h-auto" src="./images/salmon1.jpeg" alt="">
+      <div class="container max-w-3xl hidden lg:flex pt-6 justify-center overflow-hidden relative">
+        <p class="-rotate-90 text-xs absolute -left-[35px]  top-[60px]">Advertisement</p>
+        <img src="./images/advert.jpeg" alt="">
+        <p class="rotate-90 text-xs absolute -right-[35px] top-[60px] ">Advertisement</p>
+      </div>
+      <section class="md:mt-7 mb-3 bg-white">
+        <div class="md:container flex flex-col lg:flex-row ">
+          <div class="md:container bg-white md:my-8">
+            <img class="w-full h-auto" src="./images/turkey1.jpg" alt="">
 
-            <div class="container mt-4 max-w-2xl mx-auto">
+            <div class="container mt-4 max-w-2xl mx-auto ">
               <h2 class="text-2xl font-medium text-gray-600">Leftovers</h2>
               <h2 class="text-3xl font-bold my-3 text-gray-900 font-Roboto">Chef John's Best Recipes for Thanksgiving Leftovers</h2>
               <p class="text-gray-500 ">It's time for Thanksgiving, the Sequel! Once you've had your fill of turkey sandwiches, try these recipes that are arquably bigger and better than the originals.</p>
             </div>  
           </div>
-          <div class="container my-8 ">
+          <div class="my-8 container">
             <div class="rounded-md bg-amber-100 max-w-2xl mx-auto">
               <h2 class="text-2xl font-bold font-Roboto text-center py-2">News & Trending</h2>
               <div class="flex flex-col md:flex-row flex-wrap gap-6 px-2 justify-between py-4 lg:flex-col">

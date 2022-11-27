@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate</title>
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/4b850e443c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="sticky top-0 shadow-md  py-2 md:py-4 md:px-2 bg-white z-50">
+        <div class="container flex items-center justify-between lg:container lg:mx-auto md:mt-6">
+          <div id="toggleBtn" class="lg:hidden inline-block cursor-pointer" onclick="myFunction(this); toggler()">
+            <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar1 "></div>
+            <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar2 "></div>
+            <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar3 "></div>
+          </div>
+          <a href="../index.html" class="text-2xl lg:text-3xl font-bold text-orange-800 flex-1 md:flex-none items-center pl-5">
+             Odin Recipes
+          </a>
+          <div class="text-sm flex gap-9 lg:w-2/5 justify-end ">
+            <a class="font-light md:font-normal" href="#"><span><i class="fa-solid fa-user bg-red-500 border p-1 md:p-1.5 text-white rounded-full"></i> Log In</span></a>
+            <div class="hidden lg:flex items-center justify-between flex-1">
+              <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Magazine</a>
+              <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Newsletter</a>
+              <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Sweepstakes</a>
+            </div>
+          </div>
+        </div>
+        <div id="linkItems" class="container hidden lg:flex flex-col lg:flex-row  gap-5 text-sm text-gray-900 px-8 mt-8 uppercase font-semibold">
+          <a class="border-b border-gray-600 lg:border-none" href="./recipes/chicken.html">Dinners</a>
+          <a class="border-b border-gray-600 lg:border-none" href="">Meals</a>
+          <a class="border-b border-gray-600 lg:border-none" href="">Ingredients</a>
+          <a class="border-b border-gray-600 lg:border-none" href="">Occasions</a>
+          <a class="border-b border-gray-600 lg:border-none" href="">Cuisines</a>
+          <a class="border-b border-gray-600 lg:border-none" href="">Features</a>
+          <a class="border-b border-gray-600 lg:border-none" href="">About Us</a>
+          <a class="text-xs de ml-auto text-red-500" href="">Get the Magazine</a>
+        </div>
+    </header>
+    
+    <script src="../../src/js/main.js"></script>
+  </body>
+</html>

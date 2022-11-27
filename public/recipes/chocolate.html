@@ -20,38 +20,220 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="sticky top-0 shadow-md  py-2 md:py-4 md:px-2 bg-white z-50">
-        <div class="container flex items-center justify-between lg:container lg:mx-auto md:mt-6">
-          <div id="toggleBtn" class="lg:hidden inline-block cursor-pointer" onclick="myFunction(this); toggler()">
-            <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar1 "></div>
-            <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar2 "></div>
-            <div class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar3 "></div>
+  <body class="font-Poppins bg-gray-200">
+    <header class="sticky top-0 shadow-md py-2 md:py-4 md:px-2 bg-white z-50">
+      <div
+        class="container flex items-center justify-between lg:container lg:mx-auto md:mt-6"
+      >
+        <div
+          id="toggleBtn"
+          class="lg:hidden inline-block cursor-pointer"
+          onclick="myFunction(this); toggler()"
+        >
+          <div
+            class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar1"
+          ></div>
+          <div
+            class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar2"
+          ></div>
+          <div
+            class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar3"
+          ></div>
+        </div>
+        <a
+          href="../index.html"
+          class="text-2xl lg:text-3xl font-bold text-orange-800 flex-1 md:flex-none items-center pl-5"
+        >
+          Odin Recipes
+        </a>
+        <div class="text-sm flex gap-9 lg:w-2/5 justify-end">
+          <a class="font-light md:font-normal" href="#"
+            ><span
+              ><i
+                class="fa-solid fa-user bg-red-500 border p-1 md:p-1.5 text-white rounded-full"
+              ></i>
+              Log In</span
+            ></a
+          >
+          <div class="hidden lg:flex items-center justify-between flex-1">
+            <a
+              class="border-l border-slate-400 pl-3 hover:underline decoration-red-400"
+              href="#"
+              >Magazine</a
+            >
+            <a
+              class="border-l border-slate-400 pl-3 hover:underline decoration-red-400"
+              href="#"
+              >Newsletter</a
+            >
+            <a
+              class="border-l border-slate-400 pl-3 hover:underline decoration-red-400"
+              href="#"
+              >Sweepstakes</a
+            >
           </div>
-          <a href="../index.html" class="text-2xl lg:text-3xl font-bold text-orange-800 flex-1 md:flex-none items-center pl-5">
-             Odin Recipes
-          </a>
-          <div class="text-sm flex gap-9 lg:w-2/5 justify-end ">
-            <a class="font-light md:font-normal" href="#"><span><i class="fa-solid fa-user bg-red-500 border p-1 md:p-1.5 text-white rounded-full"></i> Log In</span></a>
-            <div class="hidden lg:flex items-center justify-between flex-1">
-              <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Magazine</a>
-              <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Newsletter</a>
-              <a class=" border-l border-slate-400 pl-3 hover:underline decoration-red-400" href="#">Sweepstakes</a>
+        </div>
+      </div>
+      <div
+        id="linkItems"
+        class="container hidden lg:flex flex-col lg:flex-row gap-5 text-sm text-gray-900 px-8 mt-8 uppercase font-semibold"
+      >
+        <a
+          class="border-b border-gray-600 lg:border-none"
+          href="./recipes/chicken.html"
+          >Dinners</a
+        >
+        <a class="border-b border-gray-600 lg:border-none" href="">Meals</a>
+        <a class="border-b border-gray-600 lg:border-none" href=""
+          >Ingredients</a
+        >
+        <a class="border-b border-gray-600 lg:border-none" href="">Occasions</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">Cuisines</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">Features</a>
+        <a class="border-b border-gray-600 lg:border-none" href="">About Us</a>
+        <a class="text-xs de ml-auto text-red-500" href="">Get the Magazine</a>
+      </div>
+    </header>
+    <main>
+      <section class="bg-gray-100">
+        <div class="container">
+          <div class="bg-gray-200 container max-w-md mx-auto">
+            <div class=" my-1 py-3 font-Roboto px-4 bg-gray-200">
+              <h1 class="text-2xl text-gray-600 font-medium">
+                Chocolate Earl Grey Pots de Creme Recipe
+              </h1>
+              <ul class="flex gap-5 justify-between pt-3">
+                <li class="text-gray-500 text-sm">Cuisine: <a class="text-green-600" href="#">American</a></li>
+                <li class="text-gray-500 text-sm">Course: <a class="text-green-600" href="#">Snack</a></li>
+                <li class="text-gray-500 text-sm">Skill Level: <a class="text-green-600" href="#">Beginner</a></li>
+              </ul>
+            </div>
+            <div class="bg-gray-200 border-4 border-white rounded-md max-w-sm">
+              <img class="rounded-md" src="../images/ChoclateEarl.jpeg" alt="" />
+            </div>
+            <ul class="flex flex-wrap gap-4 py-3">
+              <li class="text-blue-700">Yield: <span class="text-gray-600">1 Cup</span></li>
+              <li class="text-blue-700">Servings <span class="text-gray-600">1</span></li>
+              <li class="text-blue-700">Prep Time: <span class="text-gray-600">10m</span></li>
+              <li class="text-blue-700">Cook Time: <span class="text-gray-600">10m</span></li>
+              <li class="text-blue-700">Ready In: <span class="text-gray-600">15m</span></li>
+            </ul>
+          </div>
+          <div class="">
+            <div class="">
+              <div class="">
+                <img
+                  class="w-18 h-auto border-2 border-gray-400 rounded-md"
+                  src=""
+                  alt=""
+                />
+                <h3>Santino Majur</h3>
+                <a href="#">More From The Cheff >></a>
+              </div>
+              <div class="bg-green-100 rounded-md">
+                <p>Average Member Rating</p>
+                <h4>* * * * (4.3/5)</h4>
+                <p>Rate this recipe</p>
+                <h4>* * * * *</h4>
+                <p>319 people rated this recipe</p>
+              </div>
+              <div class="bg-blue-800 text-gray-100">
+                <h3>Nutritional Info</h3>
+                <p>This information is per serving.</p>
+                <div class="bg-white text-gray-600">
+                  <div>
+                    <h4>Fat</h4>
+                    <p>500mg</p>
+                  </div>
+                  <div>
+                    <h4>Sodium</h4>
+                    <p>30mg</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="">
+                <h3>Ingredients (For the puddings)</h3>
+                <ul>
+                  <li>2 cups cream</li>
+                  <li>120 grams dark chocolate, chopped</li>
+                  <li>2 bags of earl grey tea</li>
+                  <li>6 egg yolks</li>
+                  <li>3 Tablespoons of sugar</li>
+                </ul>
+              </div>
+              <div class="">
+                <h3>Ingredients (For the Cointreau cream)</h3>
+                <ul>
+                  <li>1/2 cup whipping cream</li>
+                  <li>2 Tablespoons powdered sugar</li>
+                  <li>2-3 Teaspoons cointreau</li>
+                </ul>
+              </div>
+              <div class="">
+                <h3>Method</h3>
+                <ul>
+                  <li>
+                    Step 1
+                    <p>
+                      Pots de Creme is a thick and rich pudding that's baked and
+                      served chilled. This one uses earl gray tea in addition to
+                      chocolate to give it a more fragrant touch. I served it
+                      with a Cointreau ( an orange-flavored liqueur) whipped
+                      cream.
+                    </p>
+                  </li>
+                  <li>
+                    Step 2
+                    <p>
+                      Preheat your oven to 325 Fahrenheit with a rack in the
+                      center. Heat cream in a pan over medium with the tea bags
+                      fully submerged until the cream is almost simmering. Try
+                      to keep them moving, so the tea can infuse the cream.
+                      Press and remove the tea bags before adding the chocolate
+                      and stirring until fully blended.
+                    </p>
+                  </li>
+                  <li>
+                    Step 3
+                    <p>
+                      Mix your yolks with the sugar until smooth, then add your
+                      hot cream mixture gradually, whisking together. Set your
+                      ramkins or mugs onto a baking pan. Distribute the pudding
+                      evenly and then add hot water to the pan until it comes
+                      about halfway up the pudding dishes.
+                    </p>
+                  </li>
+                  <li>
+                    step 4
+                    <p>
+                      Bake for about 25 minutes, or until the top and edges set.
+                      Let cool and refrigerate for at least 2 hours before
+                      adding the whipped cream, any desired garnish and serving.
+                      This recipe makes about 6 3/4 cup ramkins or 3-4 mugs.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <ul>
+                <li>
+                  Recipe Type: <a href="../recipes/chocolate.html">Chocolate</a>
+                </li>
+                <li>
+                  Tags: <a href="../recipes/chocolate.html">Chocolate, </a
+                  ><a href="#">Cointreau</a>
+                </li>
+                <li>
+                  Ingredients: <a href="#">Butter,</a> <a href="#">Cream,</a>
+                  <a href="#">Milk</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div id="linkItems" class="container hidden lg:flex flex-col lg:flex-row  gap-5 text-sm text-gray-900 px-8 mt-8 uppercase font-semibold">
-          <a class="border-b border-gray-600 lg:border-none" href="./recipes/chicken.html">Dinners</a>
-          <a class="border-b border-gray-600 lg:border-none" href="">Meals</a>
-          <a class="border-b border-gray-600 lg:border-none" href="">Ingredients</a>
-          <a class="border-b border-gray-600 lg:border-none" href="">Occasions</a>
-          <a class="border-b border-gray-600 lg:border-none" href="">Cuisines</a>
-          <a class="border-b border-gray-600 lg:border-none" href="">Features</a>
-          <a class="border-b border-gray-600 lg:border-none" href="">About Us</a>
-          <a class="text-xs de ml-auto text-red-500" href="">Get the Magazine</a>
-        </div>
-    </header>
-    
+      </section>
+    </main>
     <script src="../../src/js/main.js"></script>
   </body>
 </html>

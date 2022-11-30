@@ -1,42 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firecracker Chicken</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./salmon.html">firecracker Salmon</a></li>
-        <li><a href="./beef.html">Grilled Beef Steak</a></li>
-    </ul>
-    <h1>Firecracker Chicken</h1>
-    <p>An incredibly easy Baked Firecracker Chicken recipe that can be on your dinner table in 30 minutes with the most delicious sweet and spicy sauce. Simple, quick, utterly delicious and perfect for busy nights!</p>
-    <img src="../images/chicken.jpg" width="300px" height="auto" alt="">
-    <h2>Juicy Baked Firecracker Chicken</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fuga laborum voluptate, laboriosam ad officiis vero temporibus recusandae porro voluptatibus distinctio veritatis praesentium ipsa autem harum molestiae in minus ut?</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod odit sint. Nulla harum dolor illum accusantium quidem inventore perferendis et cumque porro neque est vel facilis soluta, dolore adipisci.</p>
-    <h2>Ingredient Notes</h2>
-    <ul>
-        <li>Chicken Breasts</li>
-        <li>Brown Sugar</li>
-        <li>Soy Sauce</li>
-        <li>Ginger</li>
-        <li>Garlic</li>
-        <li>Hot Sauce</li>
-        <li>Red Pepper Flakes</li>
-    </ul>
-    <h2>How To Make Firecracker Chicken</h2>
-    <ol>
-        <li>Preheat your oven to 450 F degrees.</li>
-        <li>Mix all the yummy sauce ingredients together.</li>
-        <li> Place the chicken breasts with the bottom side up in the baking dish.</li> 
-        <li>Pour half the sauce over and use a brush to brush it evenly over the breasts.</li>
-        <li>Flip the breasts over and pour the remaining sauce over them making sure it’s fully covered</li>
-        <li>Transfer the baking dish, uncovered, to the preheated oven and bake for 18 to 25 minutes.</li>
-    </ol>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolls Recipe</title>
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/4b850e443c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-Poppins bg-gray-200">
+    <header class="sticky top-0 shadow-md py-2 md:py-4 md:px-2 bg-white z-50">
+      <div
+        class="container flex items-center justify-between lg:container lg:mx-auto md:mt-6"
+      >
+        <div
+          id="toggleBtn"
+          class="lg:hidden inline-block cursor-pointer"
+          onclick="myFunction(this); toggler()"
+        >
+          <div
+            class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar1"
+          ></div>
+          <div
+            class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar2"
+          ></div>
+          <div
+            class="w-6 h-0.5 bg-gray-800 my-1.5 duration-300 change bar3"
+          ></div>
+        </div>
+        <a
+          href="../index.html"
+          class="text-2xl lg:text-3xl font-bold text-orange-800 flex-1 md:flex-none items-center pl-5"
+        >
+          Odin Recipes
+        </a>
+        <div class="text-sm flex gap-9 lg:w-2/5 justify-end">
+          <a class="font-light md:font-normal" href="#"
+            ><span
+              ><i
+                class="fa-solid fa-user bg-red-500 border p-1 md:p-1.5 text-white rounded-full"
+              ></i>
+              Log In</span
+            ></a
+          >
+          <div class="hidden lg:flex items-center justify-between flex-1">
+            <a
+              class="border-l border-slate-400 pl-3 lg:hover:underline decoration-red-400"
+              href="#"
+              >Magazine</a
+            >
+            <a
+              class="border-l border-slate-400 pl-3 lg:hover:underline decoration-red-400"
+              href="#"
+              >Newsletter</a
+            >
+            <a
+              class="border-l border-slate-400 pl-3 lg:hover:underline decoration-red-400"
+              href="#"
+              >Sweepstakes</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        id="linkItems"
+        class="container hidden lg:flex flex-col lg:flex-row gap-5 text-sm text-gray-900 px-8 mt-8 uppercase font-semibold"
+      >
+        <a
+          class="border-b border-gray-600 lg:border-none hover:lg:underline decoration-red-700"
+          href="#"
+          >Dinners</a
+        >
+        <a class="border-b border-gray-600 lg:border-none hover:lg:underline decoration-red-700" href="">Meals</a>
+        <a class="border-b border-gray-600 lg:border-none hover:lg:underline decoration-red-700" href=""
+          >Ingredients</a
+        >
+        <a class="border-b border-gray-600 lg:border-none hover:lg:underline decoration-red-700" href="">Occasions</a>
+        <a class="border-b border-gray-600 lg:border-none hover:lg:underline decoration-red-700" href="">Cuisines</a>
+        <a class="border-b border-gray-600 lg:border-none hover:lg:underline decoration-red-700" href="">Features</a>
+        <a class="border-b border-gray-600 lg:border-none hover:lg:underline decoration-red-700" href="">About Us</a>
+        <a class="text-xs de ml-auto text-red-500 hover:lg:underline decoration-red-700" href="">Get the Magazine</a>
+      </div>
+    </header>
+    <main>
+      <section class="bg-gray-100">
+      <div class="container max-w-3xl hidden lg:flex py-3 justify-center overflow-hidden relative my-2">
+        <p class="-rotate-90 text-xs absolute -left-[35px]  top-[50px]">Advertisement</p>
+        <img src="../images/advert.jpeg" alt="">
+        <p class="rotate-90 text-xs absolute -right-[35px] top-[50px] ">Advertisement</p>
+      </div>
+        <div class="container bg-white flex flex-col lg:flex-row">
+          <div class="container">
+            <div class="container">
+              <div class=" my-0 py-4 font-Roboto px-4 bg-gray-100">
+                <h1 class="text-2xl text-gray-600 font-medium">
+                    Vietnamese Style Grilled Chicken Recipe
+                </h1>
+                <ul class="flex gap-5 justify-start pt-2">
+                  <li class="text-gray-500 text-sm">Cuisine: <a class="text-green-600" href="#">American</a></li>
+                  <li class="text-gray-500 text-sm">Course: <a class="text-green-600" href="#">Snack</a></li>
+                  <li class="text-gray-500 text-sm">Skill Level: <a class="text-green-600" href="#">Beginner</a></li>
+                </ul>
+              </div>
+              <div class="container  rounded-md">
+                <img class="rounded-md border-4 border-gray-600" src="../images/chickgrill.jpeg" alt="" />
+              </div>
+              <ul class="container flex flex-wrap gap-4 py-3">
+                <li class="text-blue-700">Yield: <span class="text-gray-600">1 Cup</span></li>
+                <li class="text-blue-700">Servings <span class="text-gray-600">1</span></li>
+                <li class="text-blue-700">Prep Time: <span class="text-gray-600">10m</span></li>
+                <li class="text-blue-700">Cook Time: <span class="text-gray-600">10m</span></li>
+                <li class="text-blue-700">Ready In: <span class="text-gray-600">15m</span></li>
+              </ul>
+            </div>
+            <div class="bg-white flex flex-col sm:flex-row container my-10">
+              <div class="bg-white sm:order-2 container">
+                <div class="flex justify-start  gap-2 bg-white mb-8">
+                  <img
+                    class="w-18 h-auto border-4 border-gray-100 border-solid rounded-md"
+                    src="../images/pic.png"
+                    alt=""
+                  />
+                 <div class="flex flex-col">
+                  <h3 class="text-green-600 my-2">Santino Majur</h3>
+                  <a class="text-sm" href="#">More From The Cheff >></a>
+                 </div>
+                </div>
+                <div class="bg-green-100 rounded-md my-3 px-5 py-4 text-center container mb-8">
+                  <p class="text-gray-500 text-sm my-2">Average Member Rating</p>
+                  <h4 class="text-2xl text-yellow-600 flex items-center justify-center my-3">* * * * <span class="text-blue-500 text-sm items-center">(4.3/5)</span></h4>
+                  <p class="text-gray-500 text-sm my-2">Rate this recipe</p>
+                  <h4 class="text-yellow-600 text-2xl">* * * * *</h4>
+                  <p class="text-gray-500 text-sm my-2"><span class="text-gray-800 font-semibold">319</span> people rated this recipe</p>
+                </div>
+                <div class="bg-blue-600 text-gray-100 pt-3 pb-5 container rounded-md my-6">
+                  <h3 class="text-white font-semibold">Nutritional Info</h3>
+                  <p class="text-xs pb-2">This information is per serving.</p>
+                  <div class="bg-white text-gray-600 flex gap-8 justify-start py-3 px-3">
+                    <div class="mr-12">
+                      <h4>Fat</h4>
+                      <p>500mg</p>
+                    </div>
+                    <div class="ml-12">
+                      <h4>Sodium</h4>
+                      <p>30mg</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="">
+                  <h3 class="text-blue-700 text-xl py-4 sm:py-0 font-semibold">Ingredients (For the puddings)</h3>
+                  <ul class="container leading-8 text-gray-600 text-sm">
+                    <li class="list-disc">2 cups cream</li>
+                    <li class="list-disc">120 grams dark chocolate, chopped</li>
+                    <li class="list-disc">2 bags of earl grey tea</li>
+                    <li class="list-disc">6 egg yolks</li>
+                    <li class="list-disc">3 Tablespoons of sugar</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <h3 class="text-blue-700 text-xl py-4 font-semibold">Ingredients (For the Cointreau cream)</h3>
+                  <ul class="container  leading-8 text-gray-600 text-sm">
+                    <li class="list-disc">1/2 cup whipping cream</li>
+                    <li class="list-disc">2 Tablespoons powdered sugar</li>
+                    <li class="list-disc">2-3 Teaspoons cointreau</li>
+                  </ul>
+                </div>
+                <div class="">
+                  <h3 class="text-blue-700 text-xl py-4 font-semibold">Method</h3>
+                  <div class=" py-4">
+                    <div>
+                      <h4 class="text-xl text-green-600 border-b border-dashed pt-1">Step 1</h4>
+                      <p class="container py-3 text-sm text-gray-500 leading-7">
+                        Pots de Creme is a thick and rich pudding that's baked and
+                        served chilled. This one uses earl gray tea in addition to
+                        chocolate to give it a more fragrant touch. I served it
+                        with a Cointreau ( an orange-flavored liqueur) whipped
+                        cream.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 class="text-xl text-green-600 border-b border-dashed pt-1">Step 2</h4>
+                      <p class="container py-3 text-sm text-gray-500 leading-7">
+                        Preheat your oven to 325 Fahrenheit with a rack in the
+                        center. Heat cream in a pan over medium with the tea bags
+                        fully submerged until the cream is almost simmering. Try
+                        to keep them moving, so the tea can infuse the cream.
+                        Press and remove the tea bags before adding the chocolate
+                        and stirring until fully blended.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 class="text-xl text-green-600 border-b border-dashed pt-1">Step 3</h4>
+                      <p class="container py-3 text-sm text-gray-500 leading-7">
+                        Mix your yolks with the sugar until smooth, then add your
+                        hot cream mixture gradually, whisking together. Set your
+                        ramkins or mugs onto a baking pan. Distribute the pudding
+                        evenly and then add hot water to the pan until it comes
+                        about halfway up the pudding dishes.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 class="text-xl text-green-600 border-b border-dashed pt-1">step 4</h4>
+                      <p class="container py-3 text-sm text-gray-500 leading-7">
+                        Bake for about 25 minutes, or until the top and edges set.
+                        Let cool and refrigerate for at least 2 hours before
+                        adding the whipped cream, any desired garnish and serving.
+                        This recipe makes about 6 3/4 cup ramkins or 3-4 mugs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="py-3">
+                <ul class="container">
+                  <li class="py-2 text-blue-700">
+                    Recipe Type: <a class="text-green-700" href="../recipes/chocolate.html">Chocolate</a>
+                  </li>
+                  <li class="py-2 text-blue-700">
+                    Tags: <a class="text-green-700" href="../recipes/chocolate.html">Chocolate, </a
+                    ><a class="text-green-700" href="#">Cointreau</a>
+                  </li>
+                  <li class="py-2 text-blue-700">
+                    Ingredients: <a class="text-green-700" href="#">Butter,</a> <a class="text-green-700" href="#">Cream,</a>
+                    <a class="text-green-700" href="#">Milk</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container basis-[45%]">
+            <div class="container">
+              <h2 class="text-2xl my-3 py-3"><span class="text-green-600">MISC</span> Recipes</h2>
+              <div class="border border-solid border-gray-500 overflow-hidden bg-gray-100 rounded-tl-md rounded-tr-md flex">
+                <button class="py-3 px-4 duration-300 hover:bg-gray-300 bg-gray-500">Recent</button>
+                <button class="py-3 px-4 duration-300 hover:bg-gray-300">Popular</button>
+                <button class="py-3 px-4 duration-300 hover:bg-gray-300">Random</button>
+              </div>
+              <div class="flex flex-col border-x border-b border-solid border-gray-500 overflow-hidden bg-gray-100 rounded-bl-md rounded-br-md">
+                <div class="flex py-4 px-4">
+                  <a class="" href="../recipes/chocolate.html">
+                    <img class="w-32 h-auto border-2 border-white rounded-md" src="../images/ChoclateEarl.jpeg" alt="">
+                  </a>
+                  <div class="px-3">
+                    <a class="text-sm lg:text-xs text-gray-600 font-semibold" href="../recipes/chocolate.html">Chocolate Earl Grey Pots de Creme Recipe</a>
+                    <p class="text-yellow-500 text-2xl mt-7 lg:mt-3">* * * *</p>
+                  </div>
+                </div>
+                <div class="flex py-4 px-4">
+                  <a class="" href="../recipes/chicken.html">
+                    <img class="w-32 h-auto border-2 border-white rounded-md" src="../images/chickgrill.jpeg" alt="">
+                  </a>
+                  <div class="px-3">
+                    <a class="text-sm lg:text-xs text-gray-600 font-semibold" href="../recipes/chicken.html">Vietnamese Style Grilled Chicken Recipe</a>
+                    <p class="text-yellow-500 text-2xl mt-7 lg:mt-3">* * * *</p>
+                  </div>
+                </div>
+                <div class="flex py-4 px-4">
+                  <a class="" href="../recipes/pizza.html">
+                    <img class="w-32 h-auto border-2 border-white rounded-md" src="../images/pastopizza.jpeg" alt="">
+                  </a>
+                  <div class="px-6">
+                    <a class="text-sm lg:text-xs text-gray-600 font-semibold" href="../recipes/pizza.html">Pesto Pizza With Roasted Garlic & Potato</a>
+                    <p class="text-yellow-500 text-2xl mt-7 lg:mt-3">* * * *</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="container max-w-3xl hidden lg:flex py-3 justify-center overflow-hidden relative my-2">
+      <p class="-rotate-90 text-xs absolute -left-[35px]  top-[50px]">Advertisement</p>
+      <img src="../images/advert2.png" alt="">
+      <p class="rotate-90 text-xs absolute -right-[35px] top-[50px] ">Advertisement</p>
+    </div>
+    <footer class="bg-gray-100 mt-6 pt-6">
+      <div class="container flex flex-col md:justify-between md:flex-row md:px-10">
+        <div class="flex items-center justify-center flex-col w-full">
+          <a href="./index.html" class="text-2xl lg:text-3xl font-bold text-orange-800 items-center mb-5">
+            Odin Recipes
+         </a>
+         <div class="max-w-xs w-full text-center text-black bg-white font-semibold border-2 border-red-700 px-12 py-2 mb-4 hover:bg-red-700 hover:text-white">NEWSLETTER</div>
+         <div class="my-2">
+          <h3 class="text-sm text-gray-500 py-2 text-center md:text-left">Follow Us</h3>
+          <div class="flex justify-between gap-8 text-gray-700 text-xl my-2">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+         </div>
+        </div>
+        <div class="container flex my-3 justify-between flex-col md:flex-row ">
+          <div class="container flex justify-around py-5 md:flex-col md:gap-5">
+              <div class="flex flex-col gap-5 text-sm uppercase text-black font-bold">
+                <a class="lg:hover:underline decoration-red-700" href="">dinners</a>
+                <a class="lg:hover:underline decoration-red-700" href="">ingredients</a>
+                <a class="lg:hover:underline decoration-red-700" href="">cuisines</a>
+                <a class="lg:hover:underline decoration-red-700" href="">news</a>
+              </div>
+              <div class="flex flex-col gap-5 text-sm uppercase text-black font-bold ">
+                <a class="lg:hover:underline decoration-red-700" href="">Meals</a>
+                <a class="lg:hover:underline decoration-red-700" href="">Occasions</a>
+                <a class="lg:hover:underline decoration-red-700" href="">kitchen tips</a>
+                <a class="lg:hover:underline decoration-red-700" href="">features</a>
+              </div>
+          </div>
+          <div class="container flex justify-around py-5 md:flex-col md:gap-5 lg:flex-row">
+            <div class="flex flex-col gap-5 text-sm capitalize text-gray-700 font-medium">
+              <a class="lg:hover:underline decoration-red-700" href="">about us</a>
+              <a class="lg:hover:underline decoration-red-700" href="">editorial process</a>
+              <a class="lg:hover:underline decoration-red-700" href="">private policy</a>
+              <a class="lg:hover:underline decoration-red-700" href="">terms of use</a>
+            </div>
+            <div class="flex flex-col gap-5 text-sm capitalize text-gray-700 font-medium">
+              <a class="lg:hover:underline decoration-red-700" href="">content licensing</a>
+              <a class="lg:hover:underline decoration-red-700" href="">product vetting</a>
+              <a class="lg:hover:underline decoration-red-700" href="">advertise</a>
+              <a class="lg:hover:underline decoration-red-700" href="">contact</a>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="bg-white py-5">
+        <div class="container flex flex-col items-center justify-around md:flex-row text-center text-sm text-gray-600">
+          <h3 class="py-2">Odin Recipe is part of <a class="font-medium underline decoration-red-700 hover:no-underline" href="https://www.theodinproject.com/paths">The Odin Project</a> curriculum.</h3>
+          <h4 class="text-gray-800">designed by De Malong</h4>
+        </div>
+      </div>
+    </footer>
+    <script src="../../src/js/main.js"></script>
+  </body>
 </html>
